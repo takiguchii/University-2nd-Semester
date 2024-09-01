@@ -1,0 +1,61 @@
+h1{
+    font-weight: 400; 
+    font-size: 30px;
+}
+
+.fundo_cinza{
+    background-color: gray;
+}
+#fundo_body{
+    background-color: gray;
+}
+.inline{
+    display: inline;
+    background-color: blue;
+}
+
+.inlineb{
+    display: inline-block;
+    background-color: blue;
+}
+.block{
+    display: block;
+    background-color: blue;
+}
+#diplaypai{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+}
+.formatarlink{
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+}
+
+.formatarlink:hover{
+    background-color:black;
+    color: red;
+}
+#categorias{
+    padding: 20px;
+
+}
+#categorias li{
+    display: inline;
+    margin: 10px 
+}
+#fundo_categoria{
+    background-color: gray;
+}
+.fundospacamento{
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    padding: 50px;
+    box-sizing: border-box;
+    margin: 50px;
+}
+.fundospacamento h2{
+    text-align: center;
+}
