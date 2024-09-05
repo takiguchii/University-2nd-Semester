@@ -3,9 +3,33 @@ body{
     font:16px arial;
 }
 #principal{
-    width: 900px;
-    
+    width: 900px;    
 }
 img{
     width: 900px;
+}
+
+#menu a {
+    color: #4b566A;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    color: rgb(0, 132, 255);
+}
+#conteudo{
+    background-color: #e8e8d9;
+    padding: 10px ;
+}
+#rodape{
+    text-align: center;
+
+}
+
+#biografia_principal{
+    background-color: #e8e8d9;
+    display: inline-block;
 }
