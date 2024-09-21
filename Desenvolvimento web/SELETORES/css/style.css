@@ -1,0 +1,27 @@
+*{
+    color: gray;
+}
+h1{
+    color: black;
+}
+.verde{
+    color: green;
+}
+#roxo{
+    color: purple;
+}
+#bloco > h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+#bloco .bloco-superior h1{
+    font-weight: bold;
+    font-size: 25px;
+}
+#bloco2 > .descricao p span strong{
+    font-weight: 400;
+    color: red;
+}
+#bloco2 .descricao p span strong{
+    color: blue;
+}

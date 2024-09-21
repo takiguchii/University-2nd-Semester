@@ -6,7 +6,7 @@
 //Classe não possui interação 
 //Objeto possui interação
 
-class Pessoa{
+class pessoa{
     public string $nome;
     public int $idade;
 
@@ -21,7 +21,7 @@ $pessoas01->idade = 18; #aqui esta atribuindo um valor ao atributo idade do obje
 $pessoas01->apresentar();
 
 echo"<hr>";
-$pessoas02 = new Pessoa();
+$pessoas02 = new pessoa();
 $pessoas02->nome = "anna";
 $pessoas02->idade = 21;
 $pessoas02->apresentar();
