@@ -31,3 +31,6 @@ CREATE TABLE ORIGEM(
     ID INT AUTO_INCREMENT PRIMARY KEY,
     FONTE VARCHAR(20)
 );
+
+
+FOREIGN KEY (id_tabela_referenciada) REFERENCES tabela_referenciada(id)

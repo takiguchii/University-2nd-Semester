@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    width: 720px;
+    list-style: none;
+    background: rgba(0, 174, 255, 0.911);
+    float:left;
+}
+
+ul li{
+    float:left;
+}
+ul li a{
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+ul a:hover{
+    background-color: white;
+    color: rgb(120,208,210);
+}
