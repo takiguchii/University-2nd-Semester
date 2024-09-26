@@ -1,0 +1,17 @@
+table{
+    width: 600px;
+}
+th{
+    text-transform: uppercase;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+/** aplicar uma class exclusivamente a uma tag*/
+tr.alternando{
+    background-color: #efefef;
+}
+tr:hover{
+    background-color: #c3e6e5;
+}

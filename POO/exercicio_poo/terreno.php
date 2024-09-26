@@ -1,5 +1,4 @@
 <?php
-
 class Terreno {
     private float $frente;
     private float $lateral;
@@ -7,19 +6,24 @@ class Terreno {
 
 
 public function setfrente(float $frente):float{
-    if ($frente < 0){
-        $this-> $idade = 0;
-    }
-    return $this->$idade;
 }
 
 public function setlateral(float $lateral):float{
-return
-
 }
+
 public function setpreco(float $preco):float{
-    echo "teste";
-    return
-}
 
 }
+public function totalterreno():void{
+   
+}
+}
+
+$terreno1 = new $terreno;
+$terreno1->setfrente();
+$terreno1->setlateral();
+$terreno1->setpreco();
+$terreno->totalterreno();
+
+
+
