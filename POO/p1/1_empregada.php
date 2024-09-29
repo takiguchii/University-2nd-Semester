@@ -6,6 +6,13 @@ class Empregado{
     private string $setor;
     private int $salario;
 
+    public function __construct($name,$sobrenome,$setor,$salario){
+        $this-> setName($name);
+        $this-> setSobrenome($sobrenome);
+        $this-> setSetor($setor);
+        $this-> setSalario($salario);
+    }
+
 
     public function setName(string $name):void{
         $this->name = $name;
@@ -49,10 +56,9 @@ class Empregado{
         echo"Salario Anual: {$this->salarioanual()}<hr>";
 }
 }
-
-$empregado = new Empregado();
-$empregado->setName("Fern");
-$empregado->setSobrenome("Takiguchi");
-$empregado->setSetor("RH");
-$empregado->setSalario("3500");
-$empregado->Infos();
+echo"<h1>Instância 1 </h1>";
+$empregado = new Empregado("Fern", "Takiguchi", "RH", 2200);
+$empregado->infos();
+echo"<h1>Instância 2 </h1>";
+$empregado = new Empregado("Ale", "Takiguchi", "Eletrica", 3200);
+$empregado->infos();
