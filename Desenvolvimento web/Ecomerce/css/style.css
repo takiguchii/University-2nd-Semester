@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+}
+.cabecalho{
+    background-color: rgb(65,105,225);
+    min-height: 230px;
+}
+.logo{
+    width: 140px;
+    height: 110px;
+    padding-top: 20px;
+}
+.cabecalho ul{
+    list-style: none;
+    float: left;
+    margin-top: 30px;
+    background-color: white;
+}
+.cabecalho ul>li{
+    float: left;
+}
+
+.cabecalho ul>li a {
+    line-height: 3.5em;
+    color: rgb(65,105,255);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.cabecalho ul>li a:hover{
+    color: white;
+    background-color: rgb(65,105,225);
+}
+
