@@ -6,13 +6,12 @@ class Conta{
     private string $numeroConta;
     private float $saldo;
 
-    public function __contruct($banco,$agencia,$numeroConta,$saldo){
+    public function __construct($banco,$agencia,$numeroConta,$saldo){
         $this->setBanco($banco);
         $this->setAgencia($agencia);
         $this->setNumeroConta($numeroConta);
         $this->setSaldo($saldo);
     }
-
     public function setBanco(string $banco):void{
         $this->banco = $banco;
     }
@@ -25,7 +24,7 @@ class Conta{
     public function getAgencia():string{
         return $this->agencia;
     }
-    public function setNumeroConta(string $agencia):void{
+    public function setNumeroConta(string $numeroConta):void{
         $this->numeroConta =$numeroConta;
     }
     public function getNumeroConta():string{
@@ -35,24 +34,43 @@ class Conta{
         if($saldo <= 0){
             $this->saldo = 0;
         }else{
-            $salario = $this->salario;
+            $this->saldo = $saldo;
         }
     }
     public function getSaldo():float{
         return $this->saldo;
     }
-
-    
-    //funções 
     public function deposito($deposito){
         if($deposito > 0 ){
+            $this->saldo += $deposito;
             return true;
         }else{
             return false;
         }
     }
-
+    public function saque($saque){
+        if($saque <= $this->saldo){
+            $this->saldo -= $saque;
+            return true;
+        }else{
+            return false;
+        }
+    }
     public function infoUsuario(){
-
+        echo"<h1> Usuario </h1>";
+        echo"Banco:", $this->getBanco(),"<hr>";
+        echo"Agencia: ", $this->getAgencia(),"<hr>";;
+        echo"Conta: ", $this->getNumeroConta(),"<hr>";;
+        echo"Saldo: ",$this->getSaldo(),"<hr>";;
     }
 }
+
+$info = new Conta("Nubank","002","0232344",2000);
+$info->deposito($deposito = 2000);
+$info->saque($saque = 500);
+echo $info->infoUsuario();
+
+$info = new Conta("Bradesco","001","0111244",0);
+$info->deposito($deposito = 2000);
+$info->saque($saque = 500);
+echo $info->infoUsuario();
