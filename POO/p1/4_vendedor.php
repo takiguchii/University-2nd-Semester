@@ -45,7 +45,6 @@ class Vendedor{
         return $this-> totalVendido;
     }
 
-    //funções 
     public function fazerVenda($valorVenda){
         if($valorVenda > 0){
             $this->totalVendido = $valorVenda;
