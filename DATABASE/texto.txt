@@ -20,4 +20,5 @@ USE nome_do_banco;
 
 CREATE DATABASE nome_do_banco;
 
-
+alter table jogo 
+add descrição text; -- addicionando novo campo 

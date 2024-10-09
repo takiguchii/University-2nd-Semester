@@ -9,6 +9,11 @@ body{
     background-color: rgb(65,105,225);
     min-height: 230px;
 }
+
+.cabecalho div{
+    width: 750px;
+    margin: 0 auto;
+}
 .logo{
     width: 140px;
     height: 110px;
@@ -33,8 +38,13 @@ body{
     padding: 10px 20px;
 }
 
-.cabecalho ul>li a:hover{
+.cabecalho ul>li a:hover, .cabecalho ul>li:hover{
     color: white;
     background-color: rgb(65,105,225);
 }
 
+.coluna-lateral{
+    float: left;
+    width: 180px;
+    margin: 0 10px 10px;
+}
