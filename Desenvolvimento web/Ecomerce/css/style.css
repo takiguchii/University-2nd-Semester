@@ -8,8 +8,8 @@ body{
 .cabecalho{
     background-color: rgb(65,105,225);
     min-height: 230px;
+    margin-bottom: 50px;
 }
-
 .cabecalho div{
     width: 750px;
     margin: 0 auto;
@@ -28,7 +28,6 @@ body{
 .cabecalho ul>li{
     float: left;
 }
-
 .cabecalho ul>li a {
     line-height: 3.5em;
     color: rgb(65,105,255);
@@ -37,14 +36,90 @@ body{
     font-size: 16px;
     padding: 10px 20px;
 }
-
 .cabecalho ul>li a:hover, .cabecalho ul>li:hover{
     color: white;
     background-color: rgb(65,105,225);
 }
-
+/*Coluna lateral*/
 .coluna-lateral{
     float: left;
     width: 180px;
     margin: 0 10px 10px;
+}
+.coluna-lateral h2{
+    padding: 10px;
+    color: white;
+    background-color: rgb(65,105,225);
+}
+.coluna-lateral .caixa{
+    min-height: 500px;
+    margin-bottom: 50px;
+}
+div.container{
+    width: 750px;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+.coluna-lateral .link-lateral li{
+    margin-top:30px ;
+}
+.coluna-lateral .link-lateral li>a{
+    text-decoration: none;
+    color: rgb(65,105,225);
+    font-size: 16px;
+    font-weight: bold;
+}
+.coluna-lateral .link-lateral li a:hover{
+    color:white;
+    background-color: rgb(65,105,225);
+    padding: 5px;
+}
+ul.link-lateral{
+    list-style: none;
+}
+
+/*Coluna aplicativo*/
+.corpo .col_aplicativos, .corpo .col_tema{
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 270px;
+}
+.corpo .col_aplicativos h2{
+    padding: 10px;
+    color: white;
+    background-color: rgb(65,105,225);
+}
+.corpo .col_aplicativos .caixa .app img{
+    max-width: 400px;
+    width: 100%;
+}
+.corpo .col_aplicativos .caixa .app h3{
+    color: rgb(65,105,225);
+    margin-bottom: 10px;
+}
+.corpo .col_aplicativos .caixa .app p{
+    color: rgb(65,105,225);
+    margin-bottom: 10px;
+}
+.corpo .col_aplicativos .caixa .app p a {
+    color: rgb(65,105,225);
+    margin-bottom: 10px;
+}
+
+/*Coluna de tema*/
+.corpo .col_tema .caixa h2{
+    float: left;
+    padding: 10px;
+    color: white;
+    background-color: rgb(65,105,225);
+}
+.corpo .col_tema .tema{
+    margin-top: 10px;
+}
+.col_tema .tema img{
+    max-width: 400px;
+    width: 100%;
+}
+.rodape{
+    clear:both;
 }
