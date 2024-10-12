@@ -64,6 +64,5 @@ $produto2 = new Produto("Pão", 0.50, "Alimentos");
 $lista = new Lista("Supermercado campante", "03/10/24");
 $lista->adicionarProduto($produto1, 2);
 $lista->adicionarProduto($produto2, 5);
-
 echo $lista->mostrarLista();
 
