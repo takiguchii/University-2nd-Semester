@@ -1,8 +1,8 @@
 <?php 
 
 class Mochila{
-    private string $capacidadeMaxima;
     private array $itens;
+    private string $capacidadeMaxima;
 
     public function __construct($capacidadeMaxima){
         $this->setCapacidadeMaxima($capacidadeMaxima);
@@ -15,8 +15,8 @@ class Mochila{
         return $this-> capacidadeMaxima;
     }
 
-    public function adicionarItem(Item $item,$peso):void{
-        foreach()
+    public function adicionarItem(Item $nome,$peso):void{
+        array_push($this->itens, Item);
 
     }
 }
