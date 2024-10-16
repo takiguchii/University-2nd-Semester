@@ -1,3 +1,4 @@
+
 sudo mysqldump -u root -p elden_ring > backup.sql
 
 sudo mysql -u root -p
