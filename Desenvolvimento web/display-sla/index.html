@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Display flex</title>
+        <!--foi inserido um css inteno para visualização-->
+        <style type="text/css"> 
+            .conteudo{
+                background-color: gray;
+                width: 600px;
+                display: flex;
+                height: 500px;
+
+                /*
+                row = Exibe na  direção esquerda
+                row reverse = Exibe começando pela direita
+                */
+                
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+            .item{
+                width: 200px;
+                height: 200px;
+            }
+            #conteudo2{
+                margin-top: 50px;
+                background-color: gray;
+                width: 600px;
+                display: flex;
+
+                /*
+                flex-start = alinha no inicio 
+                center = alinha ao centro 
+                flex-end alinha no final
+                space-between = gera espaçamento entre os elementos
+                */
+
+                justify-content: center;
+                height: 500px;
+                align-items: center;
+            }
+            .ordem1{
+                order:1;
+            }
+            .ordem2{
+                order:2;
+            }
+            .ordem3{
+                order:3;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Conteudo">
+            <div class="item ordem2"> 01 </div>
+            <div class="item ordem3"> 02 </div>
+            <div class="item ordem1"> 03 </div>
+ 
+        </div>
+        <div id="Conteudo2">
+            <div class="item"> 01 </div>
+            <div class="item"> 02 </div>
+            <div class="item"> 03 </div>
+        </div>
+
+
+    </body>
+</html>

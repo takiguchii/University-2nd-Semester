@@ -5,6 +5,8 @@
 body{
     background-color: white;
 }
+
+/* tag header começo*/
 .cabecalho{
     background-color: rgb(65,105,225);
     min-height: 230px;
@@ -14,6 +16,7 @@ body{
     width: 750px;
     margin: 0 auto;
 }
+
 .logo{
     width: 140px;
     height: 110px;
@@ -132,18 +135,18 @@ ul.link-lateral{
 .col_tema .tema a{
     margin-top: 10px;
 }
-.rodape{
+.rodapé{
     background-color: rgb(65, 105, 255);
     height: 200px;
     clear: both;
 }
-.rodape div{
+.rodapé div{
     margin-top: 40px;
     text-align: center;
     font-weight: 700;
     color: white;
     font-size: 16px;
 }
-.rodape div p{
+.rodapé div p{
     padding: 10px;
 }
