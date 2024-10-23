@@ -9,7 +9,6 @@ class ContaBancaria {
         $this->saldo = $saldo;
     }
 
-
     public function setTitular(){
         $this->titular = $titular;
     }
@@ -31,11 +30,11 @@ class ContaBancaria {
         return $this->saldo;
     }
     public function sacar(float $valorParaSacar): void {
-        if ($valorParaSacar <= $this->saldo) {
+        if ($valorParaSacar <= $this->saldo or $valorParaSacar <= $this->limite) {
             $this->saldo -= $valorParaSacar;
             echo "Saque realizado com sucesso... <br> Valor do saque: {$valorParaSacar}$ <hr>";
         } else {
-            echo "Saque inválido. Saldo insuficiente. <hr>";
+            echo "Saque inválido.. Saldo insuficiente. <hr>";
         }
     }
     public function saldo(){

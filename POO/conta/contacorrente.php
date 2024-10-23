@@ -3,11 +3,13 @@
 require_once("contabancaria.php");
 
 class livro extends contabancaria{
-    private $limite;
+    private int $limite;
 
-private function limiteMaximo(){
-
+private function setLimite($limite):void{
+    $this-> limite = $limite;
 }
-
+private function getLimite():int{
+    return $this->limite;
+}
 
 }
