@@ -1,8 +1,8 @@
 <?php 
 
 class ContaBancaria {
-    protected string $titular;
-    protected float $saldo;
+    private string $titular;
+    private float $saldo;
 
     public function __construct(string $titular, float $saldo) {
         $this->titular = $titular;
@@ -29,6 +29,18 @@ class ContaBancaria {
         $this->saldo += $valorDepositado;
         return $this->saldo;
     }
+
+    public function sacar(float $valorSacar) {
+        if ($valorSacar <= $this->saldo) {
+            $this->saldo -= $valorSacar;
+            echo "Saque efetuado com sucesso...";
+            return $valorSacar; 
+        } else {
+            echo "Saque não efetuado";
+            return false;
+        }
+    }
+
     public function saldo(){
         echo "Saldo Total: {$this->saldo} <hr>";
     }

@@ -1,6 +1,5 @@
 <?php 
 
-
 class ContaCorrente extends ContaBancaria {
     private int $limite;
 
@@ -19,9 +18,13 @@ class ContaCorrente extends ContaBancaria {
     }
 
     public function sacar(float $valorParaSacar): void {
+        echo"Saldo: {$this->saldo} <br>";
+        echo"Limite: {$this->limite} <br>";
+
         if ($valorParaSacar <= $this->saldo + $this->limite) {
             $this->saldo -= $valorParaSacar;
             echo "Saque realizado com sucesso... <br> Valor do saque: {$valorParaSacar}$ <hr>";
+            
         } else {
             echo "Saque inválido.. Valor excede o saldo e o limite. <hr>";
         }
