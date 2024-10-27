@@ -1,8 +1,18 @@
 <?php
 
-require_once("Veiculo.php");
+require_once("Carro.php");
+require_once("Moto.php");
 
-$veiculo1 = new Veiculo("Honda","Civic",1998);
-$quantidade = 100;
-$veiculo1->acelerar($quantidade);
-$veiculo1->acelerar();
+$carro = new Carro("Toyota", "Corolla", 2020, 4);
+$moto = new Moto("Yamaha", "MT-07", 2021);
+
+$carro->acelerar(50); 
+$carro->imprimirVeiculo();
+$carro->abrirPorta(1); 
+$moto->acelerar(30); 
+$moto->imprimirMoto();
+$moto->empinar(); 
+$carro->frear(20); 
+$carro->imprimirVeiculo(true); 
+$moto->frear(20);
+$moto->imprimirMoto(true); 
