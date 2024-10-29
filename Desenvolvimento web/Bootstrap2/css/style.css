@@ -1,3 +1,31 @@
-.h-500{
+.altura{
     height: 500px;
+}
+.galeria{
+    width: 600px;
+}
+/*Dispositivo small*/
+@media (min-width: 576px) {
+    .galeria img{
+        width: 100%;
+    }
+}
+/*dispositivo de tamanho medio*/
+@media (min-width: 768px) { 
+    .galeria img{
+        width: 100%;
+    }
+
+}
+/*large device*/
+@media (min-width: 992px) { 
+    .galeria img{
+        width: 47%;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .galeria img{
+        width: 47%;
+    }
 }
