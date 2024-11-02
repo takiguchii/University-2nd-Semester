@@ -1,28 +1,54 @@
 .altura{
+    
     height: 500px;
+    padding: 10px;
 }
-.galeria{
-    width: 600px;
-}
-/*Dispositivo small*/
-@media (min-width: 576px) {
-    .galeria img{
-        width: 100%;
-    }
-}
-/*dispositivo de tamanho medio*/
-@media (min-width: 768px) { 
-    .galeria img{
-        width: 100%;
-    }
 
+.estrutura{
+    width: 700px; 
+    text-align: center;
 }
-/*large device*/
-@media (min-width: 992px) { 
+.list-size{
+    width:500px;
+}
+.centralizado{
+    width: 700px;
+    margin: 0 auto;
+}
+/*Dispositivo Extra Small*/
+@media (max-width: 575.98px) {
+    .galeria img{
+        width: 100%;
+                margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/*Dispositivo Small*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .galeria img{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/*Dispositivo de tamanho Médio*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .galeria img{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/*Large Device*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .galeria img{
         width: 47%;
     }
-}
+ }
+
 
 @media (min-width: 1200px) { 
     .galeria img{

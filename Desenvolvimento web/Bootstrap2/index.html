@@ -3,98 +3,104 @@
     <head>
         <title>Boostrap 4</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1 sharink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css"
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <!--text color-->
+        <!--Text-Color-->
         <p class="text-primary">
-            texto primary
+            Texto Primary
         </p>
         <p class="text-secondary">
-            texto secondary
+            Texto Secondary
         </p>
-        <p class="text-sucess">
-            texto sucess
-
+        <p class="text-success">
+            Texto success
         </p>
         <p class="text-info">
-            text info
+            Texto info
         </p>
         <p class="text-warning">
-            texto warning
+            Texto Warning
         </p>
         <p class="text-danger">
-            texto danger
+            Texto Danger
         </p>
         <p class="text-light bg-dark">
-            texto light
+            Texto Light
         </p>
         <p class="text-dark">
-            texto dark
+            Texto Dark
         </p>
         <p class="text-white bg-dark">
-            texto white
+            Texto White
         </p>
-
-        <!--bg color-->
-        <h3> background </h3>
-        <div class="bg-primary m-3">
-            background primary
+        <!--Bg-Color-->
+        <h1 class="m-3">
+            Background
+        </h1>
+        <div class="bg-primary text-white m-3">
+            Background Primary
         </div>
         <div class="bg-secondary text-white m-3">
-            background secondary
+            Background Secondary
         </div>
-        <div class="bg-sucess text-white m-3">
-            background sucess
+        <div class="bg-success text-white m-3">
+            Backgrpund Success
         </div>
         <div class="bg-info text-white m-3">
-            background info
+            Background Info
         </div>
-        <div class="bg-warning text-white text-dark m-3">
-            background warning
+        <div class="bg-warning text-dark m-3">
+            Background Warning
         </div>
         <div class="bg-light text-dark m-3">
-            background light
-
+            Background Light
         </div>
         <div class="bg-dark text-white m-3">
-            background Dark
+            Background Dark
         </div>
         <div>
-            <h1>largura</h1>
-            <div class="w-50 bg-white m-5">
-                block 1
+            <h1>Largura</h1>
+            <div class="bg-dark">
+                <div class="w-50 bg-white m-5">
+                    Block 1
+                </div>
             </div>
+            <h1>Altura</h1>
+            <div class="bg-dark altura">
+                <div class="h-50 bg-light w-50">
+                    bloco
 
-        </div>
-        <h1>altura </h1>
-        <div class="bg-dark">
-            <div class="h-25 bg-white">
-                caixa
+                </div>
+
             </div>
 
         </div>
         <div>
             <div>
-                <h1>bloco</h1>
+                <h1>Bloco</h1>
                 <!--
-                    m-valor, seu valor varia de 1 a 5 
-                    mt-valor (margin top- valor)
-                    mp-valor
+                    m-valor, seu valor varia de 1 a 5 (margin)
+                    mt-valor (margin top - valor)
+                    mb-valor
+                    p-valor, seu valor varia de 1 a 5 (Padding)
                 -->
-                <p class="m-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus a iusto voluptas soluta. Veniam nisi, totam hic accusamus voluptates dolores dignissimos suscipit officiis impedit architecto modi deleniti omnis fuga!
+                <p class="mt-4 bg-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laudantium nobis, neque totam esse porro. Eius, ad, eveniet sapiente neque harum animi quas soluta tenetur nihil iusto, rerum aliquam eos.
                 </p>
                 <p class="bg-info p-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure earum odio nihil doloribus adipisci vitae sunt deserunt, debitis libero fugiat, veniam culpa unde blanditiis distinctio amet, ipsum omnis repellendus sequi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus veniam magni autem ex nostrum doloremque optio similique deleniti, inventore velit quia, quos quam vero beatae non ipsam molestiae recusandae.  
                 </p>
             </div>
-            <div>
-                <h1>breakpoint</h1>
-                <p> 
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum doloremque dolor, assumenda similique nulla nesciunt sapiente ipsum quis natus illum in autem magnam molestias provident voluptatum consequatur, officia error voluptates?
+    
+        </div>
+        <div class="centralizado">
+            <div class="estrutura">
+                <h1>Breakpoint</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iure laborum similique porro asperiores non aut provident velit, mollitia magnam, sunt eum perspiciatis reiciendis. Laborum modi magni nam error atque?
                 </p>
                 <div class="galeria">
                     <img src="img/imagem.webp">
@@ -102,7 +108,52 @@
                 </div>
             </div>
         </div>
-        
+        <div>
+            <h1> Barra de navegação </h1>
+            <nav class="navbar navbar-expand-md navdbar-dark bg-dark">
+
+                <!--logo-->
+                <a href="" class="navbar-brand">logo</a>
+                <!--dentro do data-target deve colocar o id do alvo qial sera aberto ao clima -->
+                <button class="navbar-toggler" data-toggle="collapse" data-targe="#nav-alvo">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Categoria de nossa barra de navegação-->
+                <div class="collapse navbar-collapse mr-auto" id="nav-alvo">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href=" " class="nav-link"> Xbox</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href=" " class="nav-link"> Nitendo</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href=" " class="nav-link"> Playstation</a>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <h1>Lista</h1>
+            <ul class="list-group list-size">
+                <li class="list-group-item"> Dia1, estudar front</li>
+                <li class="list-group-item"> Dia2, estudar banck</li>
+                <li class="list-group-item"> Dia3, trancar faculdade</li>
+                <li class="list-group-item"> Dia4, ser feliz </li>
+            </ul>
+        </div>
+        <div>
+            <h1>Fourmulário</h1>
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input class="form-control" type="text" id="usuario" placeholder="Digite seu nome">
+                <label for="Senha">Senha</label>
+                <input class="form-control" type="password" id="senha" placeholder="Digite sua senha">
+
+
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
