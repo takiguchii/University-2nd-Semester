@@ -1,6 +1,4 @@
-<?php
-
-
+<?php 
 class Item {
     private string $nome;
     private string $descricao;
