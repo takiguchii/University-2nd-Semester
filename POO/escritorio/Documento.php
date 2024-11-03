@@ -1,19 +1,16 @@
 <?php
 
-class Documento extends Item{
+require_once ("Item.php");
+
+class Documento extends Item {
     private string $dataCriacao;
 
-    public function __construct($nome,$descricao,$dataCriacao){
-        $this->setDataCriacao($dataCriacao);
-        parent:: __construct($nome,$descricao);
-    }
-
-    public function setDataCriacao(){
+    public function __construct(string $nome, string $descricao, string $dataCriacao) {
+        parent::__construct($nome, $descricao);
         $this->dataCriacao = $dataCriacao;
     }
 
-    public function getDatacriacao(){
-        return dataCriacao; 
+    public function getDataCriacao(): string {
+        return $this->dataCriacao;
     }
 }
-

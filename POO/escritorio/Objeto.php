@@ -1,17 +1,21 @@
 <?php
 
-class Objeto extends Iten{
+require_once ("Item.php");
+
+class Objeto extends Item {
     private float $peso;
 
-    public function __construct($nome,$descricao,$peso){
+    public function __construct(string $nome, string $descricao, float $peso) {
+        parent::__construct($nome, $descricao);
         $this->setPeso($peso);
-        parent:: __construct($nome,$descricao);
     }
-    public function setPeso(float $peso):void{
+
+    public function setPeso(float $peso): void {
         $this->peso = $peso;
     }
-    public function getPeso():float{
-        return peso; 
+
+    public function getPeso(): float {
+        echo "Peso: {$this->peso} <br>";
+        return $this->peso;
     }
-    
-}   
+}
