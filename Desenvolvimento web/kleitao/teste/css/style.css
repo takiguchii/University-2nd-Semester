@@ -1,0 +1,17 @@
+
+/* Criando variaveis em css */
+:root{
+    --global-background:#9932cc;
+    --global-purple:#9932cc;
+
+}
+.bg-purple{
+    /* chamando nossa variavel */
+    background-color: var(--global-background);
+}
+.logo{
+    max-width: 300px;
+    width: 100%;
+    height: 30px;
+    
+}
