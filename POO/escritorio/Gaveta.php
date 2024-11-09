@@ -14,11 +14,11 @@ class Gaveta {
             if ($this->itens[$i]->getNome() === $nome) { 
                 unset($this->itens[$i]);
                 $this->itens = array_values($this->itens); 
-                echo "Item ( {$nome} ) removido com sucesso.<br>";
+                echo "Item ( {$nome} ) foi removido com sucesso.<br>";
                 return; 
             }
         }
-        echo "Item ( {$nome} ) não encontrado.<br>";
+        echo "Item ( {$nome} ) não foi encontrado.<br>";
     }
 
     public function listarItens(): void {
