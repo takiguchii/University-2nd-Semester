@@ -1,10 +1,17 @@
 <?php
 
+require_once("Item.php");
+require_once("Objeto.php");
+require_once("Pasta.php");
+require_once("Documento.php");
 require_once("Gaveta.php");
 
 class Armario {
     private array $gavetas = [];
 
+    public function getGavetas(): array {
+        return $this->gavetas;
+    }
     public function adicionarGaveta(Gaveta $gaveta): void {
         $this->gavetas[] = $gaveta;
     }
@@ -19,14 +26,11 @@ class Armario {
         }
     }
 
-
     public function listarGavetas(): void {
         if (empty($this->gavetas)) {
             echo "O armário está vazio.<br>";
             return;
         }
-
-
         echo "<h3>Conteúdo do Armário:</h3><ul>";
 
         foreach ($this->gavetas as $indice => $gaveta) {

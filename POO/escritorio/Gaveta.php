@@ -8,7 +8,9 @@ class Gaveta {
     public function adicionarItem(Item $item) {
         array_push($this->itens, $item); 
     }
-
+    public function getItens(): array {
+        return $this->itens;
+    }
     public function removerItem(string $nome) {
         for ($i = 0; $i < count($this->itens); $i++) {
             if ($this->itens[$i]->getNome() === $nome) { 
@@ -20,13 +22,11 @@ class Gaveta {
         }
         echo "Item ( {$nome} ) não foi encontrado.<br>";
     }
-
     public function listarItens(): void {
         if (empty($this->itens)) {
             echo "A gaveta está vazia.<br>";
             return;
         }
-
         echo "<h2>Itens na gaveta:</h2><ul>";
         foreach ($this->itens as $item) {
             echo "<li><b>Nome:</b> {$item->getNome()} <br>"; 

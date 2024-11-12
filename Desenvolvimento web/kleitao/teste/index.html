@@ -10,52 +10,99 @@
 
     <!--Font Awesomes-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css" type="text/css"
+  
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
     <title>Projeto Games</title>
   </head>
-
   <body>
-    <!--Cabeçalho (estrutura semantica)-->
+    <!--Cabeçalho (Estrutura Semântica)-->
     <header>
-        <nav class="navbar navbar-expand-md bg-purple navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="">
-                    <img class="logo" src="img/logos/kratos3.png">
-                </a>
-                <button class="navbar-toggler" data-toggler="collapse" data-target="#NavGame">
-                    <span class="navbar-toggler-icon"> </span>
-                </button>
+      <nav class="navbar navbar-expand-md bg-purple navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            <img class="logo" src="img/logos/kratos3.png">  
+          </a>
 
-                <div class="collapse navbar-colapse" id="NavGame">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Xbox</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Playlist</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Exclusivos</a>
-                        </li>
-                        <li class="nav-item">
-                            <!--Transformar link em botão-->
-                            <a href="" class="btn btn-outiline-light ml-4">Entrar</a>
-                        </li>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#NavGame">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                    </ul>
-
-                </div>
-            </div>
-
-        </nav>
+          <div class="collapse navbar-collapse" id="NavGame">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">XBOX</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Playstation</a>
+                </li>
+                <li class="nav-item">   
+                  <a href="" class="nav-link">Exclusivos </a>
+                </li>
+                <li class="nav-item">
+                  <!--Transformar link em botão-->
+                  <a href="" class="btn btn-outline-light ml-4">Entrar</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
+    <!--Estrutura semantica-->
+    <main>
+        <section id="home" class="bg-purple">
+          <div class="container">
+              <div class="row">
+                <div class="col-md-6 d-flex">
+                    <div class="align-self-center">
+                      <h1 class="display-4 text-white" >
+                        Seja você também um Kleitão bom de briga. 
+                      </h1>
+                      <p class="text-white">
+                        Todos os membros kleitão da massa concorrem a um PS5 Pro com 1 pão de quijo e cafezinho gratis
+                      </p>
+                      <form>
+                        <div class="input-group input-group-lg">
+                            <input type="text" placeholder="digite seu email" class="form-control">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-light">Concorra Já</button>
+                            </div>
+                        </div>
+                      </form>
+                      <p class="mt-4 text-white">
+                        Disponivel em:
+                        <a href="" class="btn btn-outline-light ml-2 mr-2">
+                          <i class="fa-brands fa-steam"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light mr-2">
+                          <i class="fa-brands fa-playstation"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-light">
+                          <i class="fa-brands fa-xbox"></i>
+                        </a>
+                          
+                      </p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-nome d-md-block">
+                  <img src="img/capa/kratos2.png">
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="container mt-5">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
 
-   
+            </div>
+          </div>
+
+        </section>
+    </main>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
